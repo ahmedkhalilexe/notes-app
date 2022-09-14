@@ -65,6 +65,7 @@ body {
   padding: 20px;
   width: 25vw;
   height: 25vh;
+  border-radius: 1rem;
 }
 .buttons {
   display: flex;
@@ -110,4 +111,14 @@ body {
     width: 70vw;
     height: 30vh;
   }
+}
+#notetitle {
+  border-radius: 0.3rem;
+  padding: 5px;
+  border: 1px solid black;
+}
+#noteDesc {
+  border-radius: 0.3rem;
+  padding: 5px;
+  border: 1px solid black;
 }
