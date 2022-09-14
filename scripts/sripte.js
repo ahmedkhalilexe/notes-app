@@ -23,6 +23,8 @@ createbtn.addEventListener("click", () => {
         id: noteList.length + 1,
     });
     updateUi();
+    inputTitle.value = "";
+    inputDesc.value = "";
 });
 //updates UI elements
 function updateUi() {
