@@ -18,13 +18,19 @@ body {
   align-items: center;
 }
 .addbtn {
-  height: 300px;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 2rem;
   background-color: white;
-  border-radius: 1.5rem;
+  border-radius: 50%;
   cursor: pointer;
 }
 .notesContainer {
@@ -32,6 +38,7 @@ body {
   background-color: white;
   border-radius: 1.5rem;
   padding: 20px;
+  position: relative;
   overflow: hidden;
   word-wrap: break-word;
 }
@@ -84,4 +91,17 @@ body {
 }
 .show {
   display: flex;
+}
+.deletebtn {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  background-color: #e3bcb5;
+  padding: 10px;
+  border-radius: 2rem;
+}
+.deletebtn:hover {
+  background-color: #e8d8d2;
 }
