@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  box-shadow: none;
+}
+body {
+  background-color: #b2ac88;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.addbtn {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.notesContainer {
+  height: 300px;
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 20px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.notesContainer h2 {
+  margin-bottom: 10px;
+}
+.creatNotesContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  transition: all 0.5s ease-in-out;
+}
+.noteform {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  width: 25vw;
+  height: 25vh;
+}
+.buttons {
+  display: flex;
+  margin-top: 40px;
+}
+.button {
+  width: 50%;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 1rem;
+  border: none;
+}
+.buttons #cancel {
+  background-color: #e3bcb5;
+}
+.buttons #cancel:hover {
+  background-color: #e8d8d2;
+}
+.buttons #create {
+  background-color: #39a2ae;
+}
+.buttons #create:hover {
+  background-color: #71c4c2;
+}
+.show {
+  display: flex;
+}
