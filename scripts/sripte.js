@@ -36,7 +36,7 @@ function updateUi() {
     <p>
       ${note.desc}
     </p>
-    <span class = "deletebtn" onclick = "deleteelm(${index})">delete</span>
+    <span class = "deletebtn" onclick = "deleteNote(${index})">delete</span>
     `;
         notecontainer.classList.add("notesContainer");
         notecontainer.setAttribute("id", `${note.id}`);
@@ -45,7 +45,7 @@ function updateUi() {
     });
 }
 //deletes UI element
-function deleteelm(index) {
+function deleteNote(index) {
     noteList.splice(index, 1);
     updateUi();
 }

@@ -11,12 +11,12 @@ const inputDesc: HTMLInputElement = document.getElementById(
   "noteDesc"
 )! as HTMLInputElement;
 const container: HTMLElement = document.getElementById("container")!;
-interface note {
+interface NOTE {
   title: string;
   desc: string;
   id: number;
 }
-let noteList: Array<note> = [];
+let noteList: Array<NOTE> = [];
 //make the form visible
 addBtn.addEventListener("click", () => {
   creatNotesContainer.classList.add("show");
@@ -47,7 +47,7 @@ function updateUi() {
     <p>
       ${note.desc}
     </p>
-    <span class = "deletebtn" onclick = "deleteelm(${index})">delete</span>
+    <span class = "deletebtn" onclick = "deleteNote(${index})">delete</span>
     `;
     notecontainer.classList.add("notesContainer");
     notecontainer.setAttribute("id", `${note.id}`);
@@ -56,7 +56,7 @@ function updateUi() {
   });
 }
 //deletes UI element
-function deleteelm(index: number) {
+function deleteNote(index: number) {
   noteList.splice(index, 1);
   updateUi();
 }
